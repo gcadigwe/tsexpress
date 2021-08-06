@@ -6,6 +6,7 @@ const app = express();
 
 app.use(router);
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
 
 // app.get('/', (req: Request, res: Response) => {
 //   res.send(`<div>
